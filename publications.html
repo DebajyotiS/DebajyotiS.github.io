@@ -42,6 +42,25 @@
 				 followed by the abstract, and the link to arxiv/journal sorted by year.
 				 -->
 				<h2>2023</h2>
+					<h3><a href="https://arxiv.org/abs/2307.06836">PC-Droid: Faster diffusion and improved quality for
+					particle cloud generation</a></h3>
+			<p>Matthew Leigh, Debajyoti Sengupta, John Andrew Raine, Guillaume Quétant, Tobias Golling</p>
+			<p>
+				Building on the success of PC-JeDi we introduce PC-Droid, a substantially improved
+				diffusion model for the generation of jet particle clouds. By leveraging a new diffusion
+				formulation, studying more recent integration solvers, and training on all jet types
+				simultaneously, we are able to achieve state-of-the-art performance for all types of jets across
+				all evaluation metrics. We study the trade-off between generation speed and quality by comparing
+				two attention based architectures, as well as the potential of consistency distillation to
+				reduce the number of diffusion steps. Both the faster architecture and consistency models
+				demonstrate performance surpassing many competing models, with generation time up to two orders
+				of magnitude faster than PC-JeDi and three orders of magnitude faster than Delphes.
+			</p>
+				<h3><a href="https://arxiv.org/abs/2310.00049">EPiC-ly Fast Particle Cloud Generation with Flow-Matching and Diffusion</a></h3>
+		<p>Erik Buhmann, Cedric Ewen, Darius A. Faroughy, Tobias Golling, Gregor Kasieczka, Matthew Leigh, Guillaume Quétant, John Andrew Raine, Debajyoti Sengupta, David Shih</p>
+		<p>
+			Jets at the LHC, typically consisting of a large number of highly correlated particles, are a fascinating laboratory for deep generative modeling. In this paper, we present two novel methods that generate LHC jets as point clouds efficiently and accurately. We introduce \epcjedi, which combines score-matching diffusion models with the Equivariant Point Cloud (EPiC) architecture based on the deep sets framework. This model offers a much faster alternative to previous transformer-based diffusion models without reducing the quality of the generated jets. In addition, we introduce \epcfm, the first permutation equivariant continuous normalizing flow (CNF) for particle cloud generation. This model is trained with {\it flow-matching}, a scalable and easy-to-train objective based on optimal transport that directly regresses the vector fields connecting the Gaussian noise prior to the data distribution. Our experiments demonstrate that \epcjedi and \epcfm both achieve state-of-the-art performance on the top-quark JetNet datasets whilst maintaining fast generation speed. Most notably, we find that the \epcfm model consistently outperforms all the other generative models considered here across every metric. Finally, we also introduce two new particle cloud performance metrics: the first based on the Kullback-Leibler divergence between feature distributions, the second is the negative log-posterior of a multi-model ParticleNet classifier.
+		</p>
 				<h3><a href="https://arxiv.org/abs/2303.05376">PC-JeDi: Diffusion for Particle Cloud Generation in High
 						Energy Physics</a></h3>
 				<p>Matthew Leigh, Debajyoti Sengupta, Guillaume Quétant, John Andrew Raine, Knut Zoch, Tobias Golling
@@ -73,21 +92,6 @@
 					less computational resources to cover a large number of signal regions than other fully data driven
 					approaches. When using an efficient configuration, an order of magnitude more models can be trained
 					in the same time required for ten signal regions, without a significant drop in performance.
-				</p>
-
-				<h3><a href="https://arxiv.org/abs/2307.06836">PC-Droid: Faster diffusion and improved quality for
-						particle cloud generation</a></h3>
-				<p>Matthew Leigh, Debajyoti Sengupta, John Andrew Raine, Guillaume Quétant, Tobias Golling</p>
-				<p>
-					Building on the success of PC-JeDi we introduce PC-Droid, a substantially improved
-					diffusion model for the generation of jet particle clouds. By leveraging a new diffusion
-					formulation, studying more recent integration solvers, and training on all jet types
-					simultaneously, we are able to achieve state-of-the-art performance for all types of jets across
-					all evaluation metrics. We study the trade-off between generation speed and quality by comparing
-					two attention based architectures, as well as the potential of consistency distillation to
-					reduce the number of diffusion steps. Both the faster architecture and consistency models
-					demonstrate performance surpassing many competing models, with generation time up to two orders
-					of magnitude faster than PC-JeDi and three orders of magnitude faster than Delphes.
 				</p>
 
 				<h3><a href="https://arxiv.org/abs/2307.11157">The Interplay of Machine Learning--based Resonant Anomaly
